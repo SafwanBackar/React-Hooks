@@ -16,6 +16,9 @@ const UseEffect = () => {
   return (
     <div>
         <h1>Showcase of UseEffect</h1>
+        <h4>the random sentence below is being called through
+            api whenever the component re renders
+        </h4>
         <p>{data}</p>
     </div>
   )
