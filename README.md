@@ -16,3 +16,8 @@ in second argument, initial states in objects defined . The useReducer function 
 5. useLayoutEffect => Works like useEffect. But useEffect is runned when the whole component is rendered or re-rendered completely. useLayoutEffect on the other hand is called before the component is rendered to the user. Mostly UI based. Thats why its called layoutEffect?.
 
 6. useImperativeHandle => In certain circumstances, we want our parent component to reach down to the child component, getting data that originates in the child component for its own use. We can achieve this type of data flow with the useImperativeHandle Hook, which allows us to expose a value, state, or function inside a child component to the parent component through ref. Useful for snackbar.
+
+7. useContext => It is used like props. Get rid of nested props. We set up a context provider in the componet where we pass the data. Also provide the 'value' property where we pass the data we want to acccess in other component. Then we use that context in any component we want by passing the context in useContext.
+
+8. useMemo => The useMemo Hook can be used to keep expensive, resource intensive functions from needlessly running. Kinda like the useEffect. It takes a function as the first argument which we want to run and we pass the dependency of when we want to run it as the second argument. Used for improved performance and  reduced lag in big projects. 
+Here are a couple of cases when you should consider using useMemo: You're noticing a component's render is frustratingly slow, and you're passing a calculation to an unknowable number of children, such as when rendering children using Array. map()
