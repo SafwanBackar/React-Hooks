@@ -3,6 +3,7 @@ import UseImperativeHandle from './components/ImperativeHandle/UseImperativeHand
 import ContextTutorial from './components/useContext/ContextTutorial';
 import UseEffect from './components/UseEffect';
 import UseLayoutEffect from './components/UseLayoutEffect';
+import UseMemo from './components/UseMemo';
 import UseReducer from './components/UseReducer';
 import UseRef from './components/UseRef';
  
@@ -16,7 +17,8 @@ function App() {
       {/* <UseRef/> */}
       {/* <UseLayoutEffect/> */}
       {/* <UseImperativeHandle/> */}
-      <ContextTutorial/>
+      {/* <ContextTutorial/> */}
+      <UseMemo/>
     </div>
   )
 }
