@@ -24,4 +24,7 @@ Here are a couple of cases when you should consider using useMemo: You're notici
 
 9. useCallback => Similar as the useMemo. With the useMemo, we can store a value that is memoized from a funtion (in a variable) and also we pass a value in the useMemo    (findLongestName(data) is a value that we used in the useMemo example. When we pass the function itself, useMemo becomes useless. Thats where useCallback comes in. It will then work as expected of a useMemo.
 
+  Look up more on useMemo, useEffect and useCallback. 
+  
+  Bye!
 
