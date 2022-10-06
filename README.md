@@ -21,3 +21,7 @@ in second argument, initial states in objects defined . The useReducer function 
 
 8. useMemo => The useMemo Hook can be used to keep expensive, resource intensive functions from needlessly running. Kinda like the useEffect. It takes a function as the first argument which we want to run and we pass the dependency of when we want to run it as the second argument. Used for improved performance and  reduced lag in big projects. 
 Here are a couple of cases when you should consider using useMemo: You're noticing a component's render is frustratingly slow, and you're passing a calculation to an unknowable number of children, such as when rendering children using Array. map()
+
+9. useCallback => Similar as the useMemo. With the useMemo, we can store a value that is memoized from a funtion (in a variable) and also we pass a value in the useMemo    (findLongestName(data) is a value that we used in the useMemo example. When we pass the function itself, useMemo becomes useless. Thats where useCallback comes in. It will then work as expected of a useMemo.
+
+
