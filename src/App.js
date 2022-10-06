@@ -1,4 +1,5 @@
 import './App.css';
+import UseImperativeHandle from './components/ImperativeHandle/UseImperativeHandle';
 import UseEffect from './components/UseEffect';
 import UseLayoutEffect from './components/UseLayoutEffect';
 import UseReducer from './components/UseReducer';
@@ -12,7 +13,8 @@ function App() {
       {/* <UseReducer/> */}
       {/* <UseEffect/> */}
       {/* <UseRef/> */}
-      <UseLayoutEffect/>
+      {/* <UseLayoutEffect/> */}
+      <UseImperativeHandle/>
     </div>
   )
 }
