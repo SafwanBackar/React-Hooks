@@ -15,4 +15,4 @@ in second argument, initial states in objects defined . The useReducer function 
 
 5. useLayoutEffect => Works like useEffect. But useEffect is runned when the whole component is rendered or re-rendered completely. useLayoutEffect on the other hand is called before the component is rendered to the user. Mostly UI based. Thats why its called layoutEffect?.
 
-6. useImperativeHandle => In certain circumstances, we want our parent component to reach down to the child component, getting data that originates in the child component for its own use. We can achieve this type of data flow with the useImperativeHandle Hook, which allows us to expose a value, state, or function inside a child component to the parent component through ref.
+6. useImperativeHandle => In certain circumstances, we want our parent component to reach down to the child component, getting data that originates in the child component for its own use. We can achieve this type of data flow with the useImperativeHandle Hook, which allows us to expose a value, state, or function inside a child component to the parent component through ref. Useful for snackbar.
