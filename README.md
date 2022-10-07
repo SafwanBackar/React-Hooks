@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# React-Hooks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+1. useState => The useState() is a Hook that allows you to have state variables in functional components. 
+so basically useState is the ability to encapsulate local state in a functional component. The first state being set initially and the second one is a function used to 
+update the state value.
 
-In the project directory, you can run:
+2. useReducer => Works as same as the useState. When more than one state or many states is being updated at the same time, useReducer can be used. It takes in the states as
+objects and second argument in the array is dispatch to dispactch the state action. In the useReduces funtion, first argument is reducer function and
+in second argument, initial states in objects defined . The useReducer function has initial state as 1st argument and the action type as the 2nd. Switch cases are provided inside the reducer function.
 
-### `npm start`
+3. useEffect => It is a function that is called whenever the page is re-rendered. We can pass in array of dependancy of diff states to specify when to run the useEffect hook. It primarly used in api calls?.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. useRef => The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element and also manipulate.useRef returns a mutable ref object whose .current property is initialized to the passed argument ( initialValue ). Taking the input value, focusing on input etc.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5. useLayoutEffect => Works like useEffect. But useEffect is runned when the whole component is rendered or re-rendered completely. useLayoutEffect on the other hand is called before the component is rendered to the user. Mostly UI based. Thats why its called layoutEffect?.
 
-### `npm test`
+6. useImperativeHandle => In certain circumstances, we want our parent component to reach down to the child component, getting data that originates in the child component for its own use. We can achieve this type of data flow with the useImperativeHandle Hook, which allows us to expose a value, state, or function inside a child component to the parent component through ref. Useful for snackbar.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+7. useContext => It is used like props. Get rid of nested props. We set up a context provider in the componet where we pass the data. Also provide the 'value' property where we pass the data we want to acccess in other component. Then we use that context in any component we want by passing the context in useContext.
 
-### `npm run build`
+8. useMemo => The useMemo Hook can be used to keep expensive, resource intensive functions from needlessly running. Kinda like the useEffect. It takes a function as the first argument which we want to run and we pass the dependency of when we want to run it as the second argument. Used for improved performance and  reduced lag in big projects. 
+Here are a couple of cases when you should consider using useMemo: You're noticing a component's render is frustratingly slow, and you're passing a calculation to an unknowable number of children, such as when rendering children using Array. map()
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+9. useCallback => Similar as the useMemo. With the useMemo, we can store a value that is memoized from a funtion (in a variable) and also we pass a value in the useMemo    (findLongestName(data) is a value that we used in the useMemo example. When we pass the function itself, useMemo becomes useless. Thats where useCallback comes in. It will then work as expected of a useMemo.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  Look up more on useMemo, useEffect and useCallback. 
+  
+  Bye!
